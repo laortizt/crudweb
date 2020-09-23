@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagina.master.cs" Inherits="crudWeb.App.pagina" %>
+
+<!DOCTYPE html> <!--Indica al programa que tipo de archivo y versión se está trabajando-->
+
+<html lang="es"> <!--ETIQUETA PARA DAR ESTRUCTURA A LA PAGINA Y LENGUAJE-->
+    <head runat="server"> <!--Etiqueta de encabezado-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8"/> <!-- Se usa para codificar caráteres(tíldes, simbolos etc.) mostrar diferentes lenguajes-->
+        <title>Mi Primer Pagina Web</title> <!--Etiqueta de titulo--> 
+        <meta name ="description" content = "Esta es mi primer web"/> <!--Describir el sitio web, permite encontrarlo más fácil en las búsquedas, no se ve está etiqueta-->
+        <meta name="author" content="Laortiz"/> <!--Etiqueta de autor-->
+        <meta name="keywords" content="Mi primer sitio, mi primer pagina web"/> <!--Etiqueta palabras clave para el buscar mi sitio-->
+        
+        <link rel="stylesheet" href="css/styles.css"> <!--Etiqueta para importar estilos-->
+
+        <!-- Reserva un espacio en el head para el contenido que necesite cada página -->
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+
+    <body> <!--Etiqueta de cuerpo-->
+        <form id="form1" runat="server">
+            <div class= "agrupar"> <!--Etiqueta para crear divisiones-->
+                <header class="header">
+                    <img class="image" src="image/LOGODELAIRE-01.png" width="200"/> <!--Etiqueta de cuerpo-->  
+                    <h1>Bienvenidos</h1> <!--Etiqueta de subtitulo-->
+                </header>
+
+                <nav class="menu"> <!--Etiqueta de navegación-->
+                    <ul> <!--Etiqueta lista desordenada -->
+                        <li><a href="inicio.aspx">Inicio</a></li> <!--Etiqueta de item-->
+                        <li><a href="nosotros.aspx">Nosotros</a></li>
+                        <li><a href="clientes.aspx">Clientes</a></li>
+                        <li><a href="contacto.aspx">Contacto</a></li>
+
+                        <!--
+                        <li class="liMenu"><a href="inicio.aspx" class="aMenu">Home</a></li>
+                        <li class="liMenu"><a href="Nosotros.aspx" class="aMenu">Nosotros</a></li>
+                        <li class="liMenu"><a href="Listar.aspx" class="aMenu">Listar Clientes</a></li>
+                        -->
+                    </ul>
+                </nav>
+
+                <!-- Reserva un espacio en el BODY para el contenido que necesite cada página -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+    
+                <footer class="pie"> <!--Etiqueta de pie de página-->
+                    Derechos Reservados 2020 Laortiz
+                </footer> 
+            </div>
+        </form>
+    </body>
+</html>

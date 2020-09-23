@@ -1,0 +1,200 @@
+﻿* {
+    margin: 5px 0 0 0px;
+    padding: 0;
+    box-sizing: border-box; /*resetea los bordes por defecto del archivo */
+}
+/* header, section, footer, aside, nav, article{
+    border: 1px solid  black;
+   Es una forma de colocar lineas a varios elemenos en bloque 
+} */
+
+/*PÁGINA MAESTRA*/
+header, section, footer, aside, nav, article {
+    display: block;
+}
+nav {
+    background-color: #ffbe76;
+}
+.menu {
+    background-color: #ff7979;
+    border: 1px solid black;
+    padding: 5px 15px;
+    text-align: center; /*Alinear texto*/
+    margin: 10px
+}
+.menu li {
+        list-style: none;
+        padding: 5px;
+        font: bold 14px verdana;
+        display: inline-block; /*hace que las listas se ubiquen en linea horizontal */
+        margin: 10px
+    }
+h1 {
+    font-size: 60px;
+    font-family: initial;
+    text-align: center;
+    display: inline-block;
+    width: 500px;
+}
+footer {
+    background-color: #f9ca24;
+    text-align: center;
+}
+.pie {
+    clear: both;
+    border: 1px solid black;
+}
+
+/*INICIO */
+.h2titInicio {
+    font-size: 40px;
+    font-family: unset;
+    text-align:center;
+}
+body {
+    text-align: left;
+}
+.agrupar {
+    width: 960px;
+    margin: auto;
+}
+.header {
+    background-color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
+.seccion {
+    margin: 20px 20px 20px 0;
+    width: 600px;
+    border: 1px solid black;
+    float: left;
+    background-color: #f0932b;
+    padding: 20px;
+    text-align: center;
+}
+.image {
+    width: 200px;
+/*    height: 583px;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+.columna {
+    margin: 20px 0 20px 20px;
+    width: 310px;
+    border: 1px solid black;
+    float: right;
+    background-color: #eb4d4b;
+    text-align: center;  
+}
+.columna blockquote {
+        border: 1px solid #eb4d4b;
+    }
+.p {
+    margin-bottom: 72px;
+}
+
+/*NOSOTROS */
+.articuloNosotros1 {
+    background-color: #7ed6df;
+    margin: 20px 20px 20px 0;
+    width: 300px;
+    border: 1px solid #7ed6df;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.articuloNosotros2 {
+    background-color: #22a6b3;
+    margin: 20px 20px 20px 0;
+    width: 300px;
+    border: 1px solid #22a6b3;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.articuloNosotros3 {
+    background-color: #7ed6df;
+    margin: 20px 20px 20px 0;
+    width: 300px;
+    border: 1px solid #7ed6df;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+ 
+/*CONTACTO */
+.articuloContacto {
+    margin: 20px 20px 20px 0;
+    width: 960px;
+    border: 1px solid #22a6b3;
+    padding: 20px;
+    text-align: center;
+}
+
+/*CLIENTES */
+.sectionClientes {
+    width: 960px;
+    margin: auto;
+    background-color: #eb4d4b;
+    /*line-grid: create */
+    text-align: center;
+    margin: 10px
+}
+.sectionEditarCliente {
+ text-align: justify 
+    
+}
+/*DATA GRID*/
+.mGrid 
+{
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+.mGrid td
+{
+  padding: 2px;
+  border: solid 1px #c1c1c1;
+  color: #717171;
+}
+.mGrid th 
+ {
+  padding: 4px 2px;
+  color: #fff;
+  background: #424242 url(grd_head.png) repeat-x top;
+  border-left: solid 1px #525252;
+  font-size: 0.9em;
+ }
+.mGrid .alt 
+ {
+  background: #fcfcfc url(grd_alt.png) repeat-x top;
+ }
+.mGrid .pgr 
+{
+ background: #424242 url(grd_pgr.png) repeat-x top;
+}
+.mGrid .pgr table 
+{
+ margin: 5px 0;
+}
+.mGrid .pgr td 
+{
+ border-width: 0;
+ padding: 0 6px;
+ border-left: solid 1px #666;
+ font-weight: bold;
+ color: #fff;
+ line-height: 12px;
+ }
+.mGrid .pgr a 
+ {
+  color: #666;
+  text-decoration: none;
+ }
+.mGrid .pgr a:hover 
+{
+ color: #000;
+ text-decoration: none;
+}

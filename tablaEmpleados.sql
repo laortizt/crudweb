@@ -1,0 +1,150 @@
+-- --------------------------------------------------------
+-- Host:                         localhost
+-- Server version:               5.7.24 - MySQL Community Server (GPL)
+-- Server OS:                    Win64
+-- HeidiSQL Version:             10.2.0.5599
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping structure for table bdsena.empleados
+DROP TABLE IF EXISTS `empleados`;
+CREATE TABLE IF NOT EXISTS `empleados` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `codigo` varchar(4) DEFAULT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  `apellido` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) DEFAULT NULL,
+  `celular` varchar(45) DEFAULT NULL,
+  `direccion` varchar(45) DEFAULT NULL,
+  `ciudad` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table bdsena.empleados: ~114 rows (approximately)
+DELETE FROM `empleados`;
+/*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
+INSERT INTO `empleados` (`id`, `codigo`, `nombre`, `apellido`, `correo`, `celular`, `direccion`, `ciudad`) VALUES
+	(1, '1968', 'Jeronimo', 'Burgos', 'Administrativo', '$3,200,000 ', 'Administración', 'Palmira'),
+	(2, '1674', 'Estefania', 'Villegas', 'Docente', '$3,200,000 ', 'Administración', 'Palmira'),
+	(3, '1516', 'Guillermo', 'Fernandez', 'Docente', '$4,500,000 ', 'Administración', 'Palmira'),
+	(4, '1330', 'Eliana', 'Ramirez', 'Docente', '$3,200,000 ', 'Administración', 'Palmira'),
+	(5, '1657', 'Jose', 'Carmona', 'Docente', '$3,200,000 ', 'Administración', 'Palmira'),
+	(6, '1573', 'Marcela', 'De santis', 'Aux. Administrativo', '$1,500,000 ', 'Administración', 'Palmira'),
+	(7, '1658', 'Daniela', 'Franco', 'Docente', '$3,200,000 ', 'Administración', 'Palmira'),
+	(8, '1078', 'Rafael', 'Cortes', 'Administrativo', '$4,200,000 ', 'Diseño', 'Palmira'),
+	(9, '1695', 'Camilo', 'Berrio', 'Docente', '$3,200,000 ', 'Diseño', 'Palmira'),
+	(10, '1285', 'Francisco', 'Arias', 'Docente', '$3,200,000 ', 'Diseño', 'Palmira'),
+	(11, '1284', 'Antonio', 'Merizalde', 'Docente', '$3,200,000 ', 'Diseño', 'Palmira'),
+	(12, '1517', 'Karen', 'Restrepo', 'Aux. Administrativo', '$1,500,000 ', 'Diseño', 'Palmira'),
+	(13, '1674', 'David', 'Lemus', 'Docente', '$3,200,000 ', 'Diseño', 'Palmira'),
+	(14, '1056', 'Javier', 'Santana', 'Administrativo', '$5,600,000 ', 'Comunicación', 'Monteria'),
+	(15, '1977', 'Virginia', 'Saldarriaga', 'Docente', '$4,200,000 ', 'Comunicación', 'Monteria'),
+	(16, '1725', 'Sergio', 'Posada', 'Docente', '$5,600,000 ', 'Comunicación', 'Monteria'),
+	(17, '1675', 'Jorge', 'Zea ', 'Docente', '$6,500,000 ', 'Comunicación', 'Monteria'),
+	(18, '1968', 'Mariana', 'Diaz ', 'Docente', '$3,200,000 ', 'Comunicación', 'Monteria'),
+	(19, '1723', 'Esteban', 'Giraldo', 'Aux. Administrativo', '$1,350,000 ', 'Ingeniería', 'Monteria'),
+	(20, '1076', 'Jorge', 'Idarraga', 'Aux. Administrativo', '$1,200,000 ', 'Ingeniería', 'Monteria'),
+	(21, '1816', 'Alejandro', 'Simanca', 'Aux. Administrativo', '$1,600,000 ', 'Ingeniería', 'Monteria'),
+	(22, '1154', 'Angelina', 'Pulgarin', 'Administrativo', '$4,100,000 ', 'Ingeniería', 'Monteria'),
+	(23, '1294', 'Brenda', 'Aguirre', 'Docente', '$3,200,000 ', 'Ingeniería', 'Monteria'),
+	(24, '1428', 'Gloria', 'Tamayo', 'Docente', '$3,200,000 ', 'Ingeniería', 'Monteria'),
+	(25, '1814', 'Andrea', 'Carmona ', 'Docente', '$3,200,000 ', 'Ingeniería', 'Monteria'),
+	(26, '1978', 'Lucero', 'Diaz ', 'Docente', '$3,200,000 ', 'Ingeniería', 'Monteria'),
+	(27, '1531', 'Angela', 'Alzate', 'Técnico', '$2,800,000 ', 'Ingeniería', 'Monteria'),
+	(28, '1931', 'Felipe', 'Arango', 'Administrativo', '$2,560,000 ', 'Administración', 'Medellín'),
+	(29, '1932', 'Elena', 'Garces', 'Administrativo', '$2,400,000 ', 'Administración', 'Medellín'),
+	(30, '1291', 'Carmen', 'Uribe', 'Aux. Administrativo', '$1,350,000 ', 'Administración', 'Medellín'),
+	(31, '1530', 'Daniel', 'Ospina', 'Docente', '$1,460,000 ', 'Administración', 'Medellín'),
+	(32, '1152', 'Alberto', 'Peláez', 'Docente', '$1,350,000 ', 'Administración', 'Medellín'),
+	(33, '1079', 'Elena', 'Perez', 'Docente', '$1,350,000 ', 'Administración', 'Medellín'),
+	(34, '1676', 'Sebastian', 'Carmona', 'Docente', '$1,500,000 ', 'Administración', 'Medellín'),
+	(35, '1290', 'Oscar', 'Cifuentes', 'Docente', '$1,350,000 ', 'Administración', 'Medellín'),
+	(36, '1961', 'Santiago', 'Jaramillo', 'Docente', '$1,350,000 ', 'Administración', 'Medellín'),
+	(37, '1675', 'Luis', 'Melano', 'Docente', '$1,350,000 ', 'Administración', 'Medellín'),
+	(38, '1368', 'Tammy', 'Mendez', 'Docente', '$1,280,000 ', 'Administración', 'Medellín'),
+	(39, '1153', 'Tomas', 'Ramirez', 'Técnico', '$1,350,000 ', 'Administración', 'Medellín'),
+	(40, '1960', 'Felipe', 'Girando', 'Aux. Administrativo', '$1,350,000 ', 'Administración', 'Medellín'),
+	(41, '1908', 'Patricia', 'Diez', 'Administrativo', '$5,600,000 ', 'Administración', 'Medellín'),
+	(42, '1011', 'Luisa', 'Sierra', 'Docente', '$2,700,000 ', 'Administración', 'Medellín'),
+	(43, '1359', 'Sara', 'Vallejo', 'Docente', '$2,300,000 ', 'Diseño', 'Medellín'),
+	(44, '1724', 'Alexandra', 'Guerrero', 'Docente', '$2,300,000 ', 'Diseño', 'Medellín'),
+	(45, '1923', 'Lisa', 'Guerra', 'Docente', '$2,300,000 ', 'Diseño', 'Medellín'),
+	(46, '1794', 'Ana Maria', 'Rodríguez ', 'Docente', '$2,300,000 ', 'Diseño', 'Medellín'),
+	(47, '1558', 'Sofia', 'Marulanda', 'Docente', '$2,300,000 ', 'Diseño', 'Medellín'),
+	(48, '1949', 'Paula', 'Palacio', 'Docente', '$4,100,000 ', 'Diseño', 'Medellín'),
+	(49, '1311', 'Jesus', 'Bermudez', 'Docente', '$3,800,000 ', 'Diseño', 'Medellín'),
+	(50, '1906', 'Roberta', 'Toledo', 'Aux. Administrativo', '$1,350,000 ', 'Diseño', 'Medellín'),
+	(51, '1656', 'Tatiana', 'Arango', 'Administrativo', '$2,500,000 ', 'Diseño', 'Medellín'),
+	(52, '1907', 'Melina', 'Acevedo', 'Administrativo', '$2,600,000 ', 'Diseño', 'Medellín'),
+	(53, '1724', 'Cristina', 'Cock', 'Administrativo', '$2,960,000 ', 'Diseño', 'Medellín'),
+	(54, '1301', 'Manuela', 'Casadiegos', 'Aux. Administrativo', '$1,350,000 ', 'Diseño', 'Medellín'),
+	(55, '1292', 'Isabel', 'Salamanca', 'Administrativo', '$4,350,000 ', 'Diseño', 'Medellín'),
+	(56, '1167', 'Juan', 'Arango', 'Administrativo', '$5,600,000 ', 'Diseño', 'Medellín'),
+	(57, '1950', 'Luisa', 'Granda', 'Docente', '$4,900,000 ', 'Diseño', 'Medellín'),
+	(58, '1792', 'Monica', 'Arango ', 'Técnico', '$2,000,000 ', 'Diseño', 'Medellín'),
+	(59, '1977', 'Federico', 'Arroyave', 'Técnico', '$1,300,000 ', 'Diseño', 'Medellín'),
+	(60, '1067', 'Dalia', 'Lemos', 'Técnico', '$1,100,000 ', 'Diseño', 'Medellín'),
+	(61, '1976', 'Ana', 'Jaramillo', 'Aux. Administrativo', '$1,350,000 ', 'Ingeniería', 'Medellín'),
+	(62, '1168', 'Maria', 'Lema', 'Aux. Administrativo', '$1,350,000 ', 'Ingeniería', 'Medellín'),
+	(63, '1815', 'Diana', 'Caro', 'Administrativo', '$5,600,000 ', 'Ingeniería', 'Medellín'),
+	(64, '1068', 'Amalia', 'Vergara', 'Docente', '$3,200,000 ', 'Ingeniería', 'Medellín'),
+	(65, '1012', 'Julian', 'Duque', 'Docente', '$2,400,000 ', 'Ingeniería', 'Medellín'),
+	(66, '1301', 'Maritza', 'Muñoz', 'Docente', '$3,200,000 ', 'Ingeniería', 'Medellín'),
+	(67, '1556', 'Andrés', 'Peláez', 'Docente', '$3,200,000 ', 'Ingeniería', 'Medellín'),
+	(68, '1933', 'Miguel', 'Sanchez', 'Docente', '$3,200,000 ', 'Ingeniería', 'Medellín'),
+	(69, '1333', 'Carolina', 'Cano', 'Docente', '$3,200,000 ', 'Ingeniería', 'Medellín'),
+	(70, '1510', 'Jessica', 'Marquez', 'Docente', '$4,800,000 ', 'Ingeniería', 'Medellín'),
+	(71, '1574', 'Samuel', 'Rico', 'Docente', '$3,200,000 ', 'Ingeniería', 'Medellín'),
+	(72, '1360', 'Gustavo', 'Mendez', 'Docente', '$4,000,000 ', 'Ingeniería', 'Medellín'),
+	(73, '1293', 'Karina', 'Jimenez', 'Técnico', '$1,700,000 ', 'Ingeniería', 'Medellín'),
+	(74, '1329', 'Julieth', 'Osorio', 'Docente', '$3,500,000 ', 'Medicina', 'Medellín'),
+	(75, '1572', 'Lina', 'Villamizar', 'Docente', '$3,600,000 ', 'Medicina', 'Medellín'),
+	(76, '1300', 'Carlos', 'Gomez', 'Administrativo', '$2,300,000 ', 'Medicina', 'Medellín'),
+	(77, '1557', 'Simón', 'Gracía', 'Aux. Administrativo', '$1,390,000 ', 'Medicina', 'Medellín'),
+	(78, '1169', 'Monica', 'Castro', 'Administrativo', '$5,700,000 ', 'Medicina', 'Medellín'),
+	(79, '1758', 'Melisa', 'Uribe', 'Técnico', '$1,900,000 ', 'Medicina', 'Medellín'),
+	(80, '1310', 'Alejandra', 'Florez', 'Técnico', '$1,350,000 ', 'Medicina', 'Medellín'),
+	(81, '1041', 'Amalia', 'Gutierrez', 'Docente', '$4,900,000 ', 'Medicina', 'Medellín'),
+	(82, '1361', 'Raquel', 'Medina', 'Docente', '$2,940,000 ', 'Medicina', 'Medellín'),
+	(83, '1793', 'Gonzalo', 'Betancur', 'Docente', '$1,350,000 ', 'Administración', 'Bucaramanga'),
+	(84, '1967', 'Santiago', 'Betancurt', 'Aux. Administrativo', '$1,350,000 ', 'Administración', 'Bucaramanga'),
+	(85, '1725', 'Isabella', 'Marquez', 'Administrativo', '$5,600,000 ', 'Administración', 'Bucaramanga'),
+	(86, '1969', 'Karla', 'Molina', 'Aux. Técnico', '$980,000 ', 'Administración', 'Bucaramanga'),
+	(87, '1962', 'Hilda', 'Rodriguez', 'Docente', '$2,900,000 ', 'Administración', 'Bucaramanga'),
+	(88, '1967', 'Victoria', 'Hincapie', 'Docente', '$4,600,000 ', 'Administración', 'Bucaramanga'),
+	(89, '1426', 'Pablo', 'Rojas ', 'Docente', '$5,600,000 ', 'Administración', 'Bucaramanga'),
+	(90, '1509', 'Pamela', 'Serna', 'Aux. Administrativo', '$1,350,000 ', 'Ingeniería', 'Bucaramanga'),
+	(91, '1673', 'Stepania', 'Zapata', 'Docente', '$1,350,000 ', 'Ingeniería', 'Bucaramanga'),
+	(92, '1352', 'Manuel', 'Toro', 'Docente', '$1,980,000 ', 'Ingeniería', 'Bucaramanga'),
+	(93, '1922', 'Barbara', 'Henao', 'Docente', '$2,100,000 ', 'Ingeniería', 'Bucaramanga'),
+	(94, '1518', 'Leonardo', 'Vasquez', 'Docente', '$2,600,000 ', 'Ingeniería', 'Bucaramanga'),
+	(95, '1331', 'Juliana', 'Castrillón', 'Docente', '$3,100,000 ', 'Ingeniería', 'Bucaramanga'),
+	(96, '1303', 'Dinara', 'Lopez', 'Administrativo', '$5,600,000 ', 'Ingeniería', 'Bucaramanga'),
+	(97, '1302', 'Elisa', 'Mota', 'Docente', '$3,800,000 ', 'Ingeniería', 'Bucaramanga'),
+	(98, '1334', 'Alicia', 'Perez', 'Aux. Administrativo', '$1,350,000 ', 'Ingeniería', 'Bucaramanga'),
+	(99, '1975', 'Carlos', 'Posada', 'Docente', '$3,200,000 ', 'Derecho', 'Bogotá'),
+	(100, '1759', 'Mauricio', 'Arango', 'Docente', '$4,700,000 ', 'Derecho', 'Bogotá'),
+	(101, '1055', 'Adriana', 'Hoyos', 'Docente', '$3,200,000 ', 'Derecho', 'Bogotá'),
+	(102, '1054', 'Miguel', 'Suarez', 'Docente investigador', '$4,100,000 ', 'Derecho', 'Bogotá'),
+	(103, '1075', 'Natalia', 'Aristizabal', 'Docente investigador', '$3,200,000 ', 'Derecho', 'Bogotá'),
+	(104, '1966', 'Camila', 'Dominguez ', 'Docente investigador', '$3,900,000 ', 'Derecho', 'Bogotá'),
+	(105, '1354', 'Susana', 'Ruiz', 'Administrativo', '$3,200,000 ', 'Derecho', 'Bogotá'),
+	(106, '1696', 'Cathy', 'Higuita', 'Docente', '$3,200,000 ', 'Derecho', 'Bogotá'),
+	(107, '1299', 'Catalina', 'Osorio', 'Docente', '$3,200,000 ', 'Derecho', 'Bogotá'),
+	(108, '1529', 'Mariana', 'Gomez', 'Docente', '$3,200,000 ', 'Publicidad', 'Bogotá'),
+	(109, '1080', 'Jacobo', 'Bustos', 'Docente investigador', '$3,700,000 ', 'Publicidad', 'Bogotá'),
+	(110, '1353', 'Gabriel', 'Rodas', 'Docente investigador', '$3,600,000 ', 'Publicidad', 'Bogotá'),
+	(111, '1369', 'Sandra', 'Cano', 'Administrativo', '$4,200,000 ', 'Publicidad', 'Bogotá'),
+	(112, '1370', 'Evelyn', 'Diaz ', 'Docente investigador', '$3,600,000 ', 'Publicidad', 'Bogotá'),
+	(113, '1677', 'Juan', 'Hernandez ', 'Docente investigador', '$3,700,000 ', 'Publicidad', 'Bogotá'),
+	(114, '1427', 'David', 'Jaramillo', 'Docente investigador', '$3,400,000 ', 'Publicidad', 'Bogotá');
+/*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
