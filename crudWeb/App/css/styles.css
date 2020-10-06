@@ -1,5 +1,5 @@
 ﻿* {
-    margin: 5px 0 0 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box; /*resetea los bordes por defecto del archivo */
 }
@@ -15,20 +15,31 @@ header, section, footer, aside, nav, article {
 nav {
     background-color: #ffbe76;
 }
+.Titulo {
+    color: #f9ca24;
+    font-size: 60px;
+}
 .menu {
-    background-color: #ff7979;
+    background-color: #eb4d4b;
     border: 1px solid black;
     padding: 5px 15px;
     text-align: center; /*Alinear texto*/
+    font-size: 40px;
+}
+.menu li { 
+    list-style: none;
+    padding: 5px;
+    font: bold 20px verdana;
+    display: inline-block; /*hace que las listas se ubiquen en linea horizontal */
     margin: 10px
 }
-.menu li {
-        list-style: none;
-        padding: 5px;
-        font: bold 14px verdana;
-        display: inline-block; /*hace que las listas se ubiquen en linea horizontal */
-        margin: 10px
-    }
+.menu li a { /*quitar el subrayado*/
+    text-decoration: none;
+    color: black;
+}
+.menu li a:hover { /*color cursor sobre item*/
+    color: #66CCFF;
+}
 h1 {
     font-size: 60px;
     font-family: initial;
@@ -43,7 +54,8 @@ footer {
 .pie {
     clear: both;
     border: 1px solid black;
-}
+   
+}    
 
 /*INICIO */
 .h2titInicio {
@@ -133,39 +145,50 @@ body {
 
 /*CLIENTES */
 .sectionClientes {
-    width: 960px;
-    margin: auto;
-    background-color: #eb4d4b;
-    /*line-grid: create */
+    border: 1px solid #7ed6df;
+    margin: 0 auto;
+}
+.sectionClientesAcciones {
     text-align: center;
-    margin: 10px
+}
+.sectionFormEditar {
+    text-align: center;
+}
+.mensaje {
+    font-family: 'Adobe Arabic';
+    font-size: 25px;
+}
+.TablaActiva {
+    font-family: 'Adobe Arabic';
+    font-size: 25px;
+    align-content: center
 }
 .sectionEditarCliente {
- text-align: justify 
-    
+  align-content:center
 }
+
 /*DATA GRID*/
-.mGrid 
-{
-    width: 100%;
+.mGrid {
+    /* 100%*/
     background-color: #fff;
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
+    min-width: 100%;
+    font-size: 18px;
 }
-.mGrid td
-{
-  padding: 2px;
-  border: solid 1px #c1c1c1;
-  color: #717171;
-}
+.mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #000;
+    }
 .mGrid th 
  {
   padding: 4px 2px;
   color: #fff;
   background: #424242 url(grd_head.png) repeat-x top;
   border-left: solid 1px #525252;
-  font-size: 0.9em;
+ 
  }
 .mGrid .alt 
  {
@@ -198,3 +221,20 @@ body {
  color: #000;
  text-decoration: none;
 }
+.campoEditar {
+    margin: 10px auto;
+}
+.campoEditar span {
+    margin-right: 10px;
+}
+input[type=submit] {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #66CCFF55;
+    background: #66CCFF;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background: #66CCFF55;
+}
+

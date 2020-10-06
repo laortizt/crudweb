@@ -23,22 +23,16 @@
             <div class= "agrupar"> <!--Etiqueta para crear divisiones-->
                 <header class="header">
                     <img class="image" src="image/LOGODELAIRE-01.png" width="200"/> <!--Etiqueta de cuerpo-->  
-                    <h1>Bienvenidos</h1> <!--Etiqueta de subtitulo-->
+                    <h1 class="Titulo">Bienvenidos</h1> <!--Etiqueta de subtitulo-->
                 </header>
 
                 <nav class="menu"> <!--Etiqueta de navegación-->
-                    <ul> <!--Etiqueta lista desordenada -->
+                    <!--Etiqueta lista desordenada -->
                         <li><a href="inicio.aspx">Inicio</a></li> <!--Etiqueta de item-->
                         <li><a href="nosotros.aspx">Nosotros</a></li>
                         <li><a href="clientes.aspx">Clientes</a></li>
                         <li><a href="contacto.aspx">Contacto</a></li>
 
-                        <!--
-                        <li class="liMenu"><a href="inicio.aspx" class="aMenu">Home</a></li>
-                        <li class="liMenu"><a href="Nosotros.aspx" class="aMenu">Nosotros</a></li>
-                        <li class="liMenu"><a href="Listar.aspx" class="aMenu">Listar Clientes</a></li>
-                        -->
-                    </ul>
                 </nav>
 
                 <!-- Reserva un espacio en el BODY para el contenido que necesite cada página -->
@@ -46,7 +40,7 @@
                 </asp:ContentPlaceHolder>
     
                 <footer class="pie"> <!--Etiqueta de pie de página-->
-                    Derechos Reservados 2020 Laortiz
+                    Derechos Reservados 2020 Luz Adriana Ortiz Torres
                 </footer> 
             </div>
         </form>
